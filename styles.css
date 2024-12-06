@@ -1,0 +1,191 @@
+/* Reset and base styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    height: 100%;
+    justify-content: center;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #851db9, #191414);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #fff;
+    text-align: center;
+}
+
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.icon {
+    font-size: 50px;
+    color: #1DB954;
+    margin-bottom: 15px;
+    animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: center;
+    color: #851db9;
+}
+
+p {
+    font-size: 18px;
+    color: #e0e0e0;
+    margin-bottom: 20px;
+}
+
+.button {
+    padding: 12px 25px;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    background-color: #1DB954;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #17a548;
+    transform: scale(1.05);
+}
+
+.input-box {
+    padding: 12px;
+    font-size: 16px;
+    width: 100%;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.number-box {
+    padding: 5px;
+    width: 50px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.color-header {
+    background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet, red, orange, yellow, green, blue, indigo, violet, red);
+    background-clip: text;
+    /* -webkit-background-clip: text; */
+    color: transparent;
+    /* Set background size to match the gradient cycle for a seamless loop */
+    background-size: 200% 100%;
+    animation: rainbow 5s linear infinite;
+}
+
+@keyframes rainbow {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    100% {
+        background-position: 100% 0%;
+    }
+}
+
+#results-box {
+    display: none;
+    padding: 100px;
+}
+
+#results-box h1 {
+    color: rgb(55, 204, 18);
+}
+#results {
+    width: 100%;
+    text-align: center;
+    display: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.track {
+    margin: 10px;
+    height: 300px;
+}
+
+.track-info {
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    white-space: pre;
+}
+
+.track img {
+    max-width: 200px;
+    height: auto;
+}
+
+.results-footer {
+    display: inline-block;
+    align-items: center;
+}
+
+.checkbox-container {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.footer-text {
+    font-size: 14px;
+    color: #aaa;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-text a {
+    color: #1DB954;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-text a:hover {
+    color: #17a548;
+}
